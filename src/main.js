@@ -1,6 +1,4 @@
 import { Router } from './router';
 import './styles/style.css';
-
-console.log(Router().resolve());
-
+Router().navigate(location.pathname);
 window.addEventListener('popstate', Router);
