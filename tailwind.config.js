@@ -11,6 +11,10 @@ export default {
         30: '30px',
         25: '30px',
       },
+      backgroundImage: {
+        welcome: "url('./public/asset/jpg/welcome.jpg')",
+        gard: 'linear-gradient(to bottom ,transparent 80%,#000000  )',
+      },
     },
   },
   plugins: [],
