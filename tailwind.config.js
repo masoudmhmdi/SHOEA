@@ -6,6 +6,7 @@ export default {
       colors: {
         textColor: '#152536',
         btnColor: '#212529',
+        secondary: '#FAFAFA',
       },
       borderRadius: {
         30: '30px',

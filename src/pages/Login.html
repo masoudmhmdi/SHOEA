@@ -1,1 +1,177 @@
-<h1>login page</h1>
+<body class="w-full h-full flex flex-col">
+  <div
+    id="toast-warning"
+    class="flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow dark:text-white dark:bg-btnColor fixed left-[50%] translate-x-[-50%] top-2 transition-all duration-500 translate-y-[-80px]"
+    role="alert"
+  >
+    <div
+      class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-orange-500 bg-orange-100 rounded-lg dark:bg-orange-700 dark:text-orange-200"
+    >
+      <svg
+        aria-hidden="true"
+        class="w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+      <span class="sr-only">Warning icon</span>
+    </div>
+    <div class="ml-3 text-sm font-normal">User not found</div>
+    <button
+      type="button"
+      class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+      data-dismiss-target="#toast-warning"
+      aria-label="Close"
+    >
+      <span class="sr-only">Close</span>
+      <svg
+        aria-hidden="true"
+        class="w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
+
+  <header class="w-full h-[56px] flex items-center justify-start pl-8">
+    <svg
+      width="17"
+      height="15"
+      viewBox="0 0 17 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M16.9998 7.00029C16.9998 7.2655 16.8945 7.51986 16.7069 7.70739C16.5194 7.89493 16.2651 8.00029 15.9998 8.00029H4.41383L8.70783 12.2923C8.80081 12.3853 8.87456 12.4956 8.92488 12.6171C8.9752 12.7386 9.0011 12.8688 9.0011 13.0003C9.0011 13.1318 8.9752 13.262 8.92488 13.3835C8.87456 13.5049 8.80081 13.6153 8.70783 13.7083C8.61486 13.8013 8.50448 13.875 8.383 13.9253C8.26152 13.9757 8.13132 14.0015 7.99983 14.0015C7.86835 14.0015 7.73815 13.9757 7.61667 13.9253C7.49519 13.875 7.38481 13.8013 7.29183 13.7083L1.29183 7.70829C1.19871 7.6154 1.12482 7.50504 1.07441 7.38355C1.024 7.26206 0.998047 7.13182 0.998047 7.00029C0.998047 6.86875 1.024 6.73851 1.07441 6.61702C1.12482 6.49553 1.19871 6.38518 1.29183 6.29229L7.29183 0.292287C7.47961 0.104514 7.73428 -0.000976562 7.99983 -0.000976562C8.26539 -0.000976562 8.52006 0.104514 8.70783 0.292287C8.89561 0.48006 9.0011 0.734735 9.0011 1.00029C9.0011 1.26584 8.89561 1.52051 8.70783 1.70829L4.41383 6.00029H15.9998C16.2651 6.00029 16.5194 6.10564 16.7069 6.29318C16.8945 6.48072 16.9998 6.73507 16.9998 7.00029Z"
+        fill="black"
+      />
+    </svg>
+  </header>
+  <div class="flex justify-center mt-[76px]">
+    <img src="../../public/asset/png/logo.png" alt="" />
+  </div>
+  <form id="loginForm" class="w-full flex flex-col mt-[120px] p-6 flex-1">
+    <h1 class="text-center text-[32px] font-semibold">Login to Your Account</h1>
+    <label
+      class="w-full h-[37px] flex items-center bg-secondary rounded-md mt-12 px-3"
+    >
+      <svg
+        width="16"
+        height="17"
+        viewBox="0 0 16 17"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          width="16"
+          height="16"
+          transform="translate(0 0.5)"
+          fill="white"
+          fill-opacity="0.01"
+        />
+        <path
+          id="emailPath"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1.04375 4.61063C1.13197 4.22409 1.34882 3.87896 1.65881 3.63177C1.96879 3.38458 2.35352 3.24997 2.75 3.25H13.25C13.6465 3.24997 14.0312 3.38458 14.3412 3.63177C14.6512 3.87896 14.868 4.22409 14.9563 4.61063L8 8.86225L1.04375 4.61063ZM1 5.60987V11.8259L6.07762 8.71263L1 5.60987ZM6.91587 9.22625L1.16713 12.7499C1.30916 13.0494 1.53334 13.3024 1.81356 13.4794C2.09378 13.6565 2.41853 13.7503 2.75 13.75H13.25C13.5814 13.7501 13.906 13.656 14.1861 13.4788C14.4662 13.3016 14.6902 13.0485 14.832 12.749L9.08325 9.22538L8 9.88775L6.91587 9.22538V9.22625ZM9.92237 8.7135L15 11.8259V5.60987L9.92237 8.71263V8.7135Z"
+          fill="#6C757D"
+        />
+      </svg>
+      <input
+        id="emailInput"
+        type="text"
+        class="h-full w-full outline-none bg-transparent px-1 input"
+      />
+    </label>
+    <label
+      class="w-full h-[37px] flex items-center bg-secondary rounded-md mt-[21px] px-3"
+    >
+      <svg
+        width="14"
+        height="15"
+        viewBox="0 0 14 15"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_14_9792)">
+          <path
+            id="lockPath"
+            d="M2.1875 8.375C2.1875 7.91087 2.37187 7.46575 2.70006 7.13756C3.02825 6.80937 3.47337 6.625 3.9375 6.625H10.0625C10.5266 6.625 10.9717 6.80937 11.2999 7.13756C11.6281 7.46575 11.8125 7.91087 11.8125 8.375V12.75C11.8125 13.2141 11.6281 13.6592 11.2999 13.9874C10.9717 14.3156 10.5266 14.5 10.0625 14.5H3.9375C3.47337 14.5 3.02825 14.3156 2.70006 13.9874C2.37187 13.6592 2.1875 13.2141 2.1875 12.75V8.375Z"
+            fill="#6C757D"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M3.9375 4C3.9375 3.18777 4.26016 2.40882 4.83449 1.83449C5.40882 1.26016 6.18777 0.9375 7 0.9375C7.81223 0.9375 8.59118 1.26016 9.16551 1.83449C9.73984 2.40882 10.0625 3.18777 10.0625 4V6.625H9.1875V4C9.1875 3.41984 8.95703 2.86344 8.5468 2.4532C8.13656 2.04297 7.58016 1.8125 7 1.8125C6.41984 1.8125 5.86344 2.04297 5.4532 2.4532C5.04297 2.86344 4.8125 3.41984 4.8125 4V6.625H3.9375V4Z"
+            fill="#6C757D"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_14_9792">
+            <rect
+              width="14"
+              height="14"
+              fill="white"
+              transform="translate(0 0.5)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      <input
+        id="passwordInput"
+        type="password"
+        class="h-full w-full outline-none bg-transparent px-1 input"
+      />
+      <div id="showSvgContainer">
+        <svg
+          width="14"
+          height="15"
+          viewBox="0 0 14 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="showPath"
+            d="M9.44125 11.798L8.029 10.3849C7.48286 10.5801 6.8925 10.6163 6.32662 10.4891C5.76073 10.362 5.24259 10.0768 4.83247 9.66666C4.42235 9.25654 4.13712 8.73839 4.00998 8.17251C3.88283 7.60662 3.91899 7.01626 4.11425 6.47012L2.31175 4.66762C0.82075 5.99325 0 7.5 0 7.5C0 7.5 2.625 12.3125 7 12.3125C7.84035 12.3096 8.6712 12.1345 9.44125 11.798ZM4.55875 3.202C5.3288 2.8655 6.15964 2.69039 7 2.6875C11.375 2.6875 14 7.5 14 7.5C14 7.5 13.1784 9.00588 11.6891 10.3333L9.88488 8.529C10.0801 7.98286 10.1163 7.3925 9.98915 6.82662C9.862 6.26073 9.57678 5.74258 9.16666 5.33247C8.75654 4.92235 8.23839 4.63712 7.67251 4.50998C7.10662 4.38283 6.51626 4.41899 5.97013 4.61425L4.55875 3.20288V3.202Z"
+            fill="#6C757D"
+          />
+          <path
+            d="M4.83457 7.19022C4.78644 7.52649 4.81728 7.86935 4.92466 8.19163C5.03204 8.51391 5.213 8.80676 5.4532 9.04696C5.69341 9.28716 5.98625 9.46812 6.30853 9.5755C6.63081 9.68288 6.97367 9.71373 7.30994 9.6656L4.83369 7.19022H4.83457ZM9.16582 7.80972L6.69044 5.33347C7.02672 5.28534 7.36958 5.31618 7.69186 5.42356C8.01414 5.53094 8.30698 5.7119 8.54719 5.95211C8.78739 6.19231 8.96835 6.48515 9.07573 6.80743C9.18311 7.12971 9.21395 7.47257 9.16582 7.80885V7.80972Z"
+            fill="#6C757D"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.9407 13.0598L1.44067 2.55981L2.06017 1.94031L12.5602 12.4403L11.9407 13.0598Z"
+            fill="#6C757D"
+          />
+        </svg>
+      </div>
+    </label>
+    <div class="w-full flex justify-center mt-10 gap-2">
+      <input type="checkbox" />
+      <span>Remember me</span>
+    </div>
+    <button
+      id="formBtn"
+      class="mt-auto w-full bg-[#212529] text-white rounded-30 py-3 opacity-[65%]"
+    >
+      Sign in
+    </button>
+  </form>
+</body>
