@@ -1,5 +1,6 @@
 import { userExist } from '../../services/apis/userExist';
 import GetHtml from '../../services/instance/GetHtmlPage';
+import { Router } from '../../router';
 
 export const LoginPage = async () => {
   //get HTML page and assign to document
@@ -100,7 +101,12 @@ export const LoginPage = async () => {
     let passwordVal = inputs[1].value;
     let hooAmI = await userExist(emailVal);
     if (hooAmI.length) {
-      console.log('checkPassword');
+      if (hooAmI[0].password === passwordVal) {
+        Router().navigate('/home');
+      } else {
+        showToast();
+        setTimeout(hideToast, 1000);
+      }
     } else {
       showToast();
       setTimeout(hideToast, 1000);

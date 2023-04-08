@@ -4,5 +4,35 @@
       "email": "a@b.com",
       "password": "1234"
     }
+  ],
+
+  "product": [
+    {
+      "id": 1,
+      "title": "Tasty Wooden Chicken",
+      "price": 271,
+      "brand": "nike",
+      "images": [
+        "https://imgs.search.brave.com/q-92hFBQOmbn7tL6ijPIIdFK4ns0HsfLo5j3m7oFUm4/rs:fit:1200:1200:1/g:ce/aHR0cDovL3d3dy50/ZW5uaXNudXRzLmNv/bS9pbWFnZXMvcHJv/ZHVjdC9mdWxsL05J/S0UtRlJFRS01MC02/NDIxOThfNDA2X0Ff/UFJFTS5qcGc"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tasty Wooden Chicken",
+      "price": 320,
+      "brand": "nike",
+      "images": [
+        "https://imgs.search.brave.com/B8lBRjNusYKjGDqDyjBLVxHVsaIw3lNc7KMyZL6-9sg/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5u/ZmxBTWQ4ckZneVEt/RGMtUHpwRkN3SGFI/YSZwaWQ9QXBp"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Tasty Wooden Chicken",
+      "price": 245,
+      "brand": "nike",
+      "images": [
+        "https://imgs.search.brave.com/Y4ctOB0M1Yz5XRCF8iaQHEap6MI4Cn1QN6UHPIeS3xc/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5p/bmR1SUhVVXNDX2lI/U1lQMmcxVmtBSGFI/YSZwaWQ9QXBp"
+      ]
+    }
   ]
 }
