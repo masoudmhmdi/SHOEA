@@ -13,8 +13,11 @@ export const Router = () => {
   router.on('/home', HomePage);
   router.on('/login', LoginPage);
   router.on('/brand/:name', (match) => {
-    document.body.innerHTML = match.data.name;
+    OneBrandPage(match);
   });
-
+  router.on('/product/:id', (match) => {
+    document.body.innerHTML = match.data.id;
+  });
+  // router.resolve();
   return router;
 };

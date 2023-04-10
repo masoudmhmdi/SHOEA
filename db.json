@@ -10,28 +10,409 @@
     {
       "id": 1,
       "title": "Tasty Wooden Chicken",
-      "price": 271,
-      "brand": "nike",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Adidas",
       "images": [
-        "https://imgs.search.brave.com/q-92hFBQOmbn7tL6ijPIIdFK4ns0HsfLo5j3m7oFUm4/rs:fit:1200:1200:1/g:ce/aHR0cDovL3d3dy50/ZW5uaXNudXRzLmNv/bS9pbWFnZXMvcHJv/ZHVjdC9mdWxsL05J/S0UtRlJFRS01MC02/NDIxOThfNDA2X0Ff/UFJFTS5qcGc"
+        "http://localhost:5173/data/adidas/b7beee7c32d4438aaba3acb6001c2e7b_9366.webp"
       ]
     },
     {
       "id": 2,
       "title": "Tasty Wooden Chicken",
-      "price": 320,
-      "brand": "nike",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Adidas",
       "images": [
-        "https://imgs.search.brave.com/B8lBRjNusYKjGDqDyjBLVxHVsaIw3lNc7KMyZL6-9sg/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5u/ZmxBTWQ4ckZneVEt/RGMtUHpwRkN3SGFI/YSZwaWQ9QXBp"
+        "http://localhost:5173/data/adidas/b47d77eba6f945ea8dabac210127b11e_9366.webp"
       ]
     },
     {
       "id": 3,
       "title": "Tasty Wooden Chicken",
-      "price": 245,
-      "brand": "nike",
+      "price": 271.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Nike",
       "images": [
-        "https://imgs.search.brave.com/Y4ctOB0M1Yz5XRCF8iaQHEap6MI4Cn1QN6UHPIeS3xc/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5p/bmR1SUhVVXNDX2lI/U1lQMmcxVmtBSGFI/YSZwaWQ9QXBp"
+        "http://localhost:5173/data/nike/baa2520d-49da-4a27-ab2c-7fb133fb3008.webp"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Tasty Wooden Chicken",
+      "price": 320.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Nike",
+      "images": [
+        "http://localhost:5173/data/nike/27e28757-e4b0-4f74-bdf1-f20c956c9049.webp"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Nike",
+      "images": [
+        "http://localhost:5173/data/nike/d0b94722-d603-4e66-829c-51f1801ec3fa.webp"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Nike",
+      "images": [
+        "http://localhost:5173/data/nike/bd7d1abd-cb60-4d2d-b60d-8002cc850839.webp"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Adidas",
+      "images": [
+        "http://localhost:5173/data/adidas/698e41ae0196408eb16aa7fb008046ad_9366.webp"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Adidas",
+      "images": [
+        "http://localhost:5173/data/adidas/d44fa06fc83f4644b7e8acbc01160e1b_9366.webp"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Puma",
+      "images": [
+        "http://localhost:5173/public/data/puma/photo_۲۰۲۳-۰۴-۰۹_۱۹-۳۷-۲۶%20(2).jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Puma",
+      "images": [
+        "http://localhost:5173/public/data/puma/photo_۲۰۲۳-۰۴-۰۹_۱۹-۳۷-۲۶%20(3).jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Puma",
+      "images": [
+        "http://localhost:5173/public/data/puma/photo_۲۰۲۳-۰۴-۰۹_۱۹-۳۷-۲۶%20(4).jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Puma",
+      "images": [
+        "http://localhost:5173/public/data/puma/photo_۲۰۲۳-۰۴-۰۹_۱۹-۳۷-۲۶.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Puma",
+      "images": [
+        "http://localhost:5173/public/data/puma/photo_۲۰۲۳-۰۴-۰۹_۱۹-۳۷-۲۷%20(2).jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Puma",
+      "images": [
+        "http://localhost:5173/public/data/puma/photo_۲۰۲۳-۰۴-۰۹_۱۹-۳۷-۲۸%20(3).jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "NewBalance",
+      "images": [
+        "http://localhost:5173/public/data/newbalance/14897_Comp_H_Image1.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "NewBalance",
+      "images": [
+        "http://localhost:5173/public/data/newbalance/15266_Comp_H_Image1%20(1).jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "NewBalance",
+      "images": [
+        "http://localhost:5173/public/data/newbalance/photo_۲۰۲۳-۰۴-۰۹_۱۹-۳۷-۲۵%20(5).jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "NewBalance",
+      "images": [
+        "http://localhost:5173/public/data/newbalance/photo_۲۰۲۳-۰۴-۰۹_۱۹-۳۷-۲۵%20(4).jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "NewBalance",
+      "images": [
+        "http://localhost:5173/public/data/newbalance/photo_۲۰۲۳-۰۴-۰۹_۱۹-۳۷-۲۵%20(3).jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "NewBalance",
+      "images": [
+        "http://localhost:5173/public/data/newbalance/14897_Comp_T_Image.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "NewBalance",
+      "images": [
+        "http://localhost:5173/public/data/newbalance/14897_Comp_H_Image2.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Converse",
+      "images": ["http://localhost:5173/public/data/canvas/A06113C_A_08X1.jpg"]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Converse",
+      "images": ["http://localhost:5173/public/data/canvas/A06063C_A_08X1.jpg"]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Converse",
+      "images": ["http://localhost:5173/public/data/canvas/A03499C_A_08X1.jpg"]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Converse",
+      "images": ["http://localhost:5173/public/data/canvas/A03464C_A_08X1.jpg"]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Converse",
+      "images": ["http://localhost:5173/public/data/canvas/560251C_G_08X1.jpg"]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Converse",
+      "images": [
+        "http://localhost:5173/public/data/canvas/CTAS_Hi_camo_pair_08X1.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Asics",
+      "images": [
+        "http://localhost:5173/public/data/asics/photo_2023-04-09_21-02-24.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Asics",
+      "images": [
+        "http://localhost:5173/public/data/asics/کفش-پیاده-روی-زنانه-اسیکس-مدل-asics-patriot-13-کد-1012b312-401.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Asics",
+      "images": [
+        "http://localhost:5173/public/data/asics/کفش-پیاده-روی-زنانه-اسیکس-مدل-gel-excite-9-کد-1012b182-600.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Asics",
+      "images": [
+        "http://localhost:5173/public/data/asics/کفش-پیاده-روی-و-دویدن-اسیکس-زنانه-asics-dynablast.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Asics",
+      "images": [
+        "http://localhost:5173/public/data/asics/کفش-پیاده-روی-و-دویدن-اسیکس-مردانه-asics-dynablast.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Asics",
+      "images": [
+        "http://localhost:5173/public/data/asics/کفش-پیاده-روی-و-دویدن-اسیکس-زنانه-asics-noosa-tri-14.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Reebok",
+      "images": [
+        "http://localhost:5173/public/data/reebock/51b48c5b65984bed84cbaf4100f82e09_9366.webp"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Reebok",
+      "images": [
+        "http://localhost:5173/public/data/reebock/757aa342a9b24b8ba914af88001a011b_9366.webp"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Reebok",
+      "images": [
+        "http://localhost:5173/public/data/reebock/1383ffd853864a4d99a7af9b013f07c3_9366.webp"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Reebok",
+      "images": [
+        "http://localhost:5173/public/data/reebock/d5d76dcc47b748118cf2af290186c867_9366.webp"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tasty Wooden Chicken",
+      "price": 245.0,
+      "size": [45, 42, 40],
+      "color": ["red", "green", "blue"],
+      "brand": "Reebok",
+      "images": [
+        "http://localhost:5173/public/data/reebock/df2d6571d58741549cfdaf290186eec2_9366.webp"
       ]
     }
   ]

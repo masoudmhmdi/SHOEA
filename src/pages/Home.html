@@ -1,18 +1,14 @@
-<body class="w-full px-6">
+<body class="w-full px-6 pb-[66px]">
   <header class="w-full">
     <section class="w-full flex items-center h-[80px]">
       <div class="flex flex-1 gap-5 items-center">
         <div class="rounded-full w-[50px] h-[50px]">
-          <img
-            class="w-full h-full"
-            src="../../public/asset/png/userImage.png"
-            alt=""
-          />
+          <img class="w-full h-full" src="/asset/png/userImage.png" alt="" />
         </div>
         <div class="flex flex-col gap-1">
           <div class="flex items-center">
             <span class="text-[#757475] text-[16px]"> Good Morning </span>
-            <img class="w-4 h-4" src="../../public/asset/png/👋.png" alt="" />
+            <img class="w-4 h-4" src="/asset/png/👋.png" alt="" />
           </div>
           <p class="text-black text-[16px]">Saeed Abdilar</p>
         </div>
@@ -105,15 +101,18 @@
   </header>
   <main class="w-full">
     <!-- category button -->
-    <section class="w-full flex flex-wrap gap-10 justify-around mt-2">
+    <section
+      id="brandBtnCategorySection"
+      class="w-full flex flex-wrap gap-10 justify-around mt-2"
+    >
       <div class="flex flex-col justify-center items-center gap-3">
         <button
-          name="nike"
+          name="Nike"
           class="w-[60px] h-[60px] rounded-full flex justify-center items-center overflow-hidden bg-primary brandBtn"
         >
           <img
             class="w-[30px] h-[20px]"
-            src="../../public/asset/png/Brand/image 1.png"
+            src="/asset/png/Brand/image 1.png"
             alt=""
           />
         </button>
@@ -121,12 +120,12 @@
       </div>
       <div class="flex flex-col justify-center items-center gap-3">
         <button
-          name="adidas"
+          name="Adidas"
           class="w-[60px] h-[60px] rounded-full flex justify-center items-center overflow-hidden bg-primary brandBtn"
         >
           <img
             class="w-[30px] h-[20px]"
-            src="../../public/asset/png/Brand/image 1 (1).png"
+            src="/asset/png/Brand/image 1 (1).png"
             alt=""
           />
         </button>
@@ -134,12 +133,12 @@
       </div>
       <div class="flex flex-col justify-center items-center gap-3">
         <button
-          name="puma"
+          name="Puma"
           class="w-[60px] h-[60px] rounded-full flex justify-center items-center overflow-hidden bg-primary brandBtn"
         >
           <img
             class="w-[30px] h-[20px]"
-            src="../../public/asset/png/Brand/puma.png"
+            src="/asset/png/Brand/puma.png"
             alt=""
           />
         </button>
@@ -147,12 +146,12 @@
       </div>
       <div class="flex flex-col justify-center items-center gap-3">
         <button
-          name="asics"
+          name="Asics"
           class="w-[60px] h-[60px] rounded-full flex justify-center items-center overflow-hidden bg-primary brandBtn"
         >
           <img
             class="w-[30px] h-[20px]"
-            src="../../public/asset/png/Brand/asics.png"
+            src="/asset/png/Brand/asics.png"
             alt=""
           />
         </button>
@@ -160,12 +159,12 @@
       </div>
       <div class="flex flex-col justify-center items-center gap-3">
         <button
-          name="reebok"
+          name="Reebok"
           class="w-[60px] h-[60px] rounded-full flex justify-center items-center overflow-hidden bg-primary brandBtn"
         >
           <img
             class="w-[30px] h-[20px]"
-            src="../../public/asset/png/Brand/reebok.png"
+            src="/asset/png/Brand/reebok.png"
             alt=""
           />
         </button>
@@ -173,12 +172,12 @@
       </div>
       <div class="flex flex-col justify-center items-center gap-3 max-w-[60px]">
         <button
-          name="new-balance"
+          name="newBalance"
           class="w-[60px] h-[60px] rounded-full flex justify-center items-center overflow-hidden bg-primary brandBtn"
         >
           <img
             class="w-[30px] h-[20px]"
-            src="../../public/asset/png/Brand/newbalance.png"
+            src="/asset/png/Brand/newbalance.png"
             alt=""
           />
         </button>
@@ -186,12 +185,12 @@
       </div>
       <div class="flex flex-col justify-center items-center gap-3">
         <button
-          name="converse"
+          name="Converse"
           class="w-[60px] h-[60px] rounded-full flex justify-center items-center overflow-hidden bg-primary brandBtn"
         >
           <img
             class="w-[30px] h-[20px]"
-            src="../../public/asset/png/Brand/converse.png"
+            src="/asset/png/Brand/converse.png"
             alt=""
           />
         </button>
@@ -199,17 +198,229 @@
       </div>
       <div class="flex flex-col justify-center items-center gap-3">
         <button
-          name="more"
+          name="More"
           class="w-[60px] h-[60px] rounded-full flex justify-center items-center overflow-hidden bg-primary brandBtn"
         >
           <img
             class="w-[30px] h-[20px]"
-            src="../../public/asset/png/Brand/more.png"
+            src="/asset/png/Brand/more.png"
             alt=""
           />
         </button>
         <p>More...</p>
       </div>
     </section>
+    <section class="mt-4">
+      <div class="flex w-full justify-between">
+        <h2 class="text-[20px] font-semibold text-btnColor">Most popular</h2>
+        <button
+          class="text-[16px] font-semibold text-btnColor"
+          id="seeAllBtn"
+          data-brand="popular"
+        >
+          See All
+        </button>
+      </div>
+      <div
+        id="scrollCategoryBtn"
+        class="w-full overflow-x-scroll mt-5 flex gap-3 py-1"
+      >
+        <button
+          data-filter="true"
+          class="bg-btnColor text-white border-2 border-btnColor rounded-25 px-[20px] py-[10px] text-[16px] font-semibold scrollbarBtn"
+        >
+          All
+        </button>
+        <button
+          data-filter="true"
+          class="bg-white text-btnColor border-2 border-btnColor rounded-25 px-[20px] py-[10px] text-[16px] font-semibold scrollbarBtn"
+        >
+          Reebok
+        </button>
+        <button
+          data-filter="false"
+          class="bg-white text-btnColor border-2 border-btnColor rounded-25 px-[20px] py-[10px] text-[16px] font-semibold scrollbarBtn"
+        >
+          Nike
+        </button>
+        <button
+          data-filter="false"
+          class="bg-white text-btnColor border-2 border-btnColor rounded-25 px-[20px] py-[10px] text-[16px] font-semibold scrollbarBtn"
+        >
+          Adidas
+        </button>
+        <button
+          data-filter="false"
+          class="bg-white text-btnColor border-2 border-btnColor rounded-25 px-[20px] py-[10px] text-[16px] font-semibold scrollbarBtn"
+        >
+          Puma
+        </button>
+        <button
+          data-filter="false"
+          class="bg-white text-btnColor border-2 border-btnColor rounded-25 px-[20px] py-[10px] text-[16px] font-semibold scrollbarBtn"
+        >
+          Asics
+        </button>
+        <button
+          data-filter="false"
+          class="bg-white text-btnColor border-2 border-btnColor rounded-25 px-[20px] py-[10px] text-[16px] font-semibold scrollbarBtn"
+        >
+          NewBalance
+        </button>
+        <button
+          data-filter="false"
+          class="bg-white text-btnColor border-2 border-btnColor rounded-25 px-[20px] py-[10px] text-[16px] font-semibold scrollbarBtn"
+        >
+          Converse
+        </button>
+      </div>
+      <div
+        id="cardContainer"
+        class="w-full flex flex-wrap mt-6 justify-between gap-4"
+      ></div>
+    </section>
+    <div
+      class="w-full h-[66px] flex justify-around items-center fixed bottom-0"
+    >
+      <!-- home svg -->
+      <div class="flex flex-col">
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M261.56 101.28a8 8 0 00-11.06 0L66.4 277.15a8 8 0 00-2.47 5.79L63.9 448a32 32 0 0032 32H192a16 16 0 0016-16V328a8 8 0 018-8h80a8 8 0 018 8v136a16 16 0 0016 16h96.06a32 32 0 0032-32V282.94a8 8 0 00-2.47-5.79z"
+          />
+          <path
+            d="M490.91 244.15l-74.8-71.56V64a16 16 0 00-16-16h-48a16 16 0 00-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0043 267.56L250.5 69.28a8 8 0 0111.06 0l207.52 198.28a16 16 0 0022.59-.44c6.14-6.36 5.63-16.86-.76-22.97z"
+          />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">Home</span>
+      </div>
+      <!-- cart -->
+      <div class="flex flex-col">
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+            d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zM160 176v-32a96 96 0 0196-96h0a96 96 0 0196 96v32"
+          />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">cart</span>
+      </div>
+      <!-- orders -->
+      <div class="flex flex-col">
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <circle
+            cx="176"
+            cy="416"
+            r="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <circle
+            cx="400"
+            cy="416"
+            r="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+            d="M48 80h64l48 272h256"
+          />
+          <path
+            d="M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">Orders</span>
+      </div>
+      <!-- Wallet -->
+      <div class="flex flex-col">
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <rect
+            x="48"
+            y="144"
+            width="416"
+            height="288"
+            rx="48"
+            ry="48"
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path
+            d="M411.36 144v-30A50 50 0 00352 64.9L88.64 109.85A50 50 0 0048 159v49"
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path d="M368 320a32 32 0 1132-32 32 32 0 01-32 32z" />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">Wallet</span>
+      </div>
+      <!-- Wallet -->
+      <div class="flex flex-col">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path
+            d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z"
+            fill="none"
+            stroke="currentColor"
+            stroke-miterlimit="10"
+            stroke-width="32"
+          />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">Profile</span>
+      </div>
+    </div>
   </main>
 </body>

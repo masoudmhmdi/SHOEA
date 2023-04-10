@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const GetHtml = axios.create({
-  baseURL: './src/pages',
+  baseURL: 'http://localhost:5173/src/pages',
 });
 
 GetHtml.interceptors.response.use((res) => {
