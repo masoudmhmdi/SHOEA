@@ -172,7 +172,7 @@
       </div>
       <div class="flex flex-col justify-center items-center gap-3 max-w-[60px]">
         <button
-          name="newBalance"
+          name="NewBalance"
           class="w-[60px] h-[60px] rounded-full flex justify-center items-center overflow-hidden bg-primary brandBtn"
         >
           <img
@@ -280,10 +280,11 @@
       ></div>
     </section>
     <div
-      class="w-full h-[66px] flex justify-around items-center fixed bottom-0"
+      id="actionBarContainer"
+      class="w-full h-[66px] flex justify-around items-center fixed bottom-0 bg-white"
     >
       <!-- home svg -->
-      <div class="flex flex-col">
+      <button name="home" class="flex flex-col cursor-pointer">
         <svg
           class="w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
@@ -298,9 +299,9 @@
           />
         </svg>
         <span class="text-[10px] font-semibold text-center">Home</span>
-      </div>
+      </button>
       <!-- cart -->
-      <div class="flex flex-col">
+      <button name="cart" class="flex flex-col">
         <svg
           class="w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
@@ -317,9 +318,9 @@
           />
         </svg>
         <span class="text-[10px] font-semibold text-center">cart</span>
-      </div>
+      </button>
       <!-- orders -->
-      <div class="flex flex-col">
+      <button name="orders" class="flex flex-col">
         <svg
           class="w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
@@ -364,7 +365,7 @@
           />
         </svg>
         <span class="text-[10px] font-semibold text-center">Orders</span>
-      </div>
+      </button>
       <!-- Wallet -->
       <div class="flex flex-col">
         <svg

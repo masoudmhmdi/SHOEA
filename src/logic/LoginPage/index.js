@@ -102,6 +102,8 @@ export const LoginPage = async () => {
     let hooAmI = await userExist(emailVal);
     if (hooAmI.length) {
       if (hooAmI[0].password === passwordVal) {
+        console.log(hooAmI);
+        localStorage.setItem('id', hooAmI[0].id);
         Router().navigate('/home');
       } else {
         showToast();

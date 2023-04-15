@@ -14,6 +14,7 @@ export const HomePage = async () => {
   let scrollCategoryBtn = document.getElementById('scrollCategoryBtn');
   let cardContainer = document.getElementById('cardContainer');
   let seeAllBtn = document.getElementById('seeAllBtn');
+  let actionBarContainer = document.getElementById('actionBarContainer');
   init();
   //functions
   function renderBtn(element) {
@@ -52,5 +53,9 @@ export const HomePage = async () => {
         renderCard(product, cardContainer);
       }
     }
+  });
+  actionBarContainer.addEventListener('click', (e) => {
+    let btnExist = e.target.closest('button');
+    btnExist && Router().navigate(`/${btnExist.name}`);
   });
 };

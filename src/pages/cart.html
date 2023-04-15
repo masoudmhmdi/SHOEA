@@ -1,0 +1,376 @@
+<body class="w-full bg-[#FDFDFD]">
+  <!-- fixed header -->
+  <header
+    class="w-full h-14 flex items-center justify-start px-6 pt-4 fixed top-0 bg-[#FDFDFD]"
+  >
+    <div class="flex gap-2 items-center flex-1">
+      <img class="w-[18px] h-6" src="./asset/png/logo.png" alt="" />
+      <h1 class="text-2xl font-bold align-middle">My Cart</h1>
+    </div>
+    <div>
+      <svg
+        class="w-8 h-7"
+        viewBox="0 0 18 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          width="18"
+          height="18"
+          transform="translate(0 0.5)"
+          fill="white"
+          fill-opacity="0.01"
+        />
+        <g clip-path="url(#clip0_36_9509)">
+          <path
+            d="M12.742 11.844C13.7103 10.5227 14.144 8.88447 13.9563 7.25713C13.7686 5.62979 12.9734 4.13332 11.7297 3.06711C10.4861 2.0009 8.88573 1.44358 7.24882 1.50666C5.61191 1.56973 4.05917 2.24854 2.90125 3.40729C1.74333 4.56603 1.06563 6.11926 1.00373 7.75621C0.941829 9.39317 1.50029 10.9931 2.56739 12.236C3.63449 13.4789 5.13153 14.273 6.759 14.4596C8.38648 14.6461 10.0244 14.2112 11.345 13.242H11.344C11.374 13.282 11.406 13.32 11.442 13.357L15.292 17.207C15.4795 17.3946 15.7339 17.5001 15.9991 17.5002C16.2644 17.5003 16.5188 17.395 16.7065 17.2075C16.8941 17.02 16.9996 16.7656 16.9997 16.5003C16.9998 16.2351 16.8945 15.9806 16.707 15.793L12.857 11.943C12.8212 11.9068 12.7828 11.8734 12.742 11.843V11.844ZM13 7.99998C13 8.72225 12.8577 9.43745 12.5813 10.1047C12.3049 10.772 11.8998 11.3783 11.3891 11.8891C10.8783 12.3998 10.272 12.8049 9.60474 13.0813C8.93745 13.3577 8.22225 13.5 7.49998 13.5C6.77771 13.5 6.06251 13.3577 5.39522 13.0813C4.72793 12.8049 4.12162 12.3998 3.61089 11.8891C3.10017 11.3783 2.69505 10.772 2.41864 10.1047C2.14224 9.43745 1.99998 8.72225 1.99998 7.99998C1.99998 6.54129 2.57945 5.14234 3.6109 4.11089C4.64235 3.07944 6.04129 2.49998 7.49998 2.49998C8.95867 2.49998 10.3576 3.07944 11.3891 4.11089C12.4205 5.14234 13 6.54129 13 7.99998Z"
+            fill="#6C757D"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_36_9509">
+            <rect
+              width="16"
+              height="16"
+              fill="white"
+              transform="translate(1 1.5)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </header>
+  <!-- Cart Container -->
+  <div
+    id="cartContainer"
+    class="w-full flex flex-col gap-2 p-6 pt-20 pb-[130px]"
+  >
+    <div
+      class="w-full h-36 sm:h-full p-6 flex justify-center lg:h-[300px] gap-1 bg-white shadow shadow-primary rounded-30"
+    >
+      <img
+        class="w-1/3 h-full rounded-2xl object-cover"
+        src="./data/nike/046e1693-f6be-4ae3-9378-14a754533a84.webp"
+        alt=""
+      />
+      <div class="w-2/3 flex flex-col pl-4">
+        <div class="w-full flex">
+          <h3 class="text-xl font-semibold flex-1 truncate">
+            Air jordan 3 Retro
+          </h3>
+          <button id="deleteBtn">
+            <svg
+              class="w-6 h-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M10 12V17"
+                  stroke="#000000"
+                  stroke-width="1.104"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 12V17"
+                  stroke="#000000"
+                  stroke-width="1.104"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4 7H20"
+                  stroke="#000000"
+                  stroke-width="1.104"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                  stroke="#000000"
+                  stroke-width="1.104"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                  stroke="#000000"
+                  stroke-width="1.104"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="w-full pt-2 flex justify-start items-center gap-1 text-xs opacity-70 font-semibold"
+        >
+          <div class="flex gap-1 items-center">
+            <div class="w-4 h-4 bg-red-300 rounded-full"></div>
+            <span>Black</span>
+          </div>
+          <span>|</span>
+          <span>size=45</span>
+        </div>
+        <div class="flex justify-between items-center pt-3 mt-auto">
+          <h3 class="font-semibold">$222</h3>
+          <div
+            class="w-1/2 h-8 rounded-25 bg-primary flex justify-around items-center"
+          >
+            <button id="minus">
+              <svg
+                class="w-4 h-10"
+                width="64px"
+                height="64px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                    fill="#000000"
+                  />
+                </g>
+              </svg>
+            </button>
+            <span id="quantity" class="text-xs">1</span>
+            <button id="plus">
+              <svg
+                class="w-4 h-10"
+                viewBox="0 0 24.00 24.00"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 4C12.5523 4 13 4.44772 13 5V11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H13V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H11V5C11 4.44772 11.4477 4 12 4Z"
+                    fill="#000000"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fixed footer and checkout button -->
+  <div class="w-full flex flex-col fixed bottom-0 bg-[#FDFDFD]">
+    <div class="w-full flex h-[60px] px-6">
+      <div class="w-1/3 flex flex-col gap-1">
+        <span class="text-xs">Total price</span>
+        <h2 id="totalAmount" class="text-2xl font-semibold">500.00$</h2>
+      </div>
+      <div class="w-2/3">
+        <button
+          id="checkoutBtn"
+          class="bg-[#101010] drop-shadow-sm shadow-black rounded-30 text-white w-full h-full flex justify-center items-center gap-1"
+        >
+          <span>checkout</span>
+          <svg
+            class="w-4 h-4"
+            viewBox="0 0 24.00 24.00"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            transform="rotate(0)"
+            stroke="#ffffff"
+            stroke-width="2.4"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke="#CCCCCC"
+              stroke-width="0.144"
+            />
+            <g id="SVGRepo_iconCarrier">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                fill="#ffffff"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      id="actionBarContainer"
+      class="w-full h-[66px] flex justify-around items-center"
+    >
+      <!-- home svg -->
+      <button name="home" class="flex flex-col cursor-pointer">
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path
+            d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">Home</span>
+      </button>
+      <!-- cart -->
+      <button name="cart" class="flex flex-col">
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M454.65 169.4A31.82 31.82 0 00432 160h-64v-16a112 112 0 00-224 0v16H80a32 32 0 00-32 32v216c0 39 33 72 72 72h272a72.22 72.22 0 0050.48-20.55 69.48 69.48 0 0021.52-50.2V192a31.75 31.75 0 00-9.35-22.6zM176 144a80 80 0 01160 0v16H176z"
+          />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">cart</span>
+      </button>
+      <!-- orders -->
+      <button name="orders" class="flex flex-col">
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <circle
+            cx="176"
+            cy="416"
+            r="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <circle
+            cx="400"
+            cy="416"
+            r="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+            d="M48 80h64l48 272h256"
+          />
+          <path
+            d="M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">Orders</span>
+      </button>
+      <!-- Wallet -->
+      <div class="flex flex-col">
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <rect
+            x="48"
+            y="144"
+            width="416"
+            height="288"
+            rx="48"
+            ry="48"
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path
+            d="M411.36 144v-30A50 50 0 00352 64.9L88.64 109.85A50 50 0 0048 159v49"
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path d="M368 320a32 32 0 1132-32 32 32 0 01-32 32z" />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">Wallet</span>
+      </div>
+      <!-- Wallet -->
+      <div class="flex flex-col">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path
+            d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z"
+            fill="none"
+            stroke="currentColor"
+            stroke-miterlimit="10"
+            stroke-width="32"
+          />
+        </svg>
+        <span class="text-[10px] font-semibold text-center">Profile</span>
+      </div>
+    </div>
+  </div>
+</body>

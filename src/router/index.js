@@ -1,9 +1,12 @@
 import Navigo from 'navigo';
+import { cart } from '../logic/cart';
 import { HomePage } from '../logic/HomePage';
 import { LoginPage } from '../logic/LoginPage';
 import { OneBrandPage } from '../logic/oneBrandPage';
+import { orders } from '../logic/orders/orders';
 import { StarterPage } from '../logic/StarterPage';
 import { WelcomePage } from '../logic/WelcomePage';
+import { singleProduct } from '../logic/singleProduct';
 
 export const Router = () => {
   const router = new Navigo('/');
@@ -16,8 +19,11 @@ export const Router = () => {
     OneBrandPage(match);
   });
   router.on('/product/:id', (match) => {
-    document.body.innerHTML = match.data.id;
+    singleProduct(match);
   });
+  router.on('/cart', cart);
+  router.on('/orders', orders);
+
   // router.resolve();
   return router;
 };
