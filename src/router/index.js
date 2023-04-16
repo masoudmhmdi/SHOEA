@@ -23,6 +23,7 @@ export const Router = () => {
   });
   router.on('/cart', cart);
   router.on('/orders', orders);
+  router.on('/checkout', () => (document.body.innerHTML = 'checkout page'));
 
   // router.resolve();
   return router;

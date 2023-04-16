@@ -9,6 +9,20 @@
       ],
       "cart": [
         {
+          "totalPrice": 980,
+          "title": "Tasty Wooden Chicken",
+          "color": "red",
+          "size": "45",
+          "quantity": 4,
+          "id": 8,
+          "images": [
+            "http://localhost:5173/data/adidas/d44fa06fc83f4644b7e8acbc01160e1b_9366.webp",
+            "http://localhost:5173/data/adidas/d44fa06fc83f4644b7e8acbc01160e1b_9366.webp",
+            "http://localhost:5173/data/adidas/d44fa06fc83f4644b7e8acbc01160e1b_9366.webp"
+          ],
+          "price": 245
+        },
+        {
           "totalPrice": 245,
           "title": "Tasty Wooden Chicken",
           "color": "red",
@@ -19,34 +33,6 @@
             "http://localhost:5173/data/adidas/b7beee7c32d4438aaba3acb6001c2e7b_9366.webp",
             "http://localhost:5173/data/adidas/b7beee7c32d4438aaba3acb6001c2e7b_9366.webp",
             "http://localhost:5173/data/adidas/b7beee7c32d4438aaba3acb6001c2e7b_9366.webp"
-          ],
-          "price": 245
-        },
-        {
-          "totalPrice": 271,
-          "title": "Tasty Wooden Chicken",
-          "color": "red",
-          "size": "45",
-          "quantity": 1,
-          "id": 3,
-          "images": [
-            "http://localhost:5173/data/nike/baa2520d-49da-4a27-ab2c-7fb133fb3008.webp",
-            "http://localhost:5173/data/nike/baa2520d-49da-4a27-ab2c-7fb133fb3008.webp",
-            "http://localhost:5173/data/nike/baa2520d-49da-4a27-ab2c-7fb133fb3008.webp"
-          ],
-          "price": 271
-        },
-        {
-          "totalPrice": 1470,
-          "title": "Tasty Wooden Chicken",
-          "color": "red",
-          "size": "40",
-          "quantity": 6,
-          "id": 27,
-          "images": [
-            "http://localhost:5173/public/data/canvas/CTAS_Hi_camo_pair_08X1.jpg",
-            "http://localhost:5173/public/data/canvas/CTAS_Hi_camo_pair_08X1.jpg",
-            "http://localhost:5173/public/data/canvas/CTAS_Hi_camo_pair_08X1.jpg"
           ],
           "price": 245
         }

@@ -9,12 +9,17 @@ export const cart = async () => {
   document.body = ordersBody;
   let CartData = await getCartData(localStorage.getItem('id'));
   let localCartData = [...CartData];
-  console.log(localCartData);
 
   //select Elements
   let actionBarContainer = document.getElementById('actionBarContainer');
   let cartContainer = document.getElementById('cartContainer');
   let totalAmount = document.getElementById('totalAmount');
+  let modal = document.getElementById('modal');
+  let overlay = document.getElementById('overlay');
+  let removeProduct = document.getElementById('removeProduct');
+  let yesAndNoBtnContainer = document.querySelector('.action');
+  let checkoutBtn = document.getElementById('checkoutBtn');
+
   //functions
 
   async function handleTotalAmount() {
@@ -98,10 +103,43 @@ export const cart = async () => {
       totalPrice.textContent = `$${data.totalPrice}`;
     });
   });
+  //handle Delete
+  function handleDelete(id) {
+    localCartData = localCartData.filter((i) => +i.id !== +id);
+    console.log(localCartData);
+    render(localCartData);
+    patchUser(localStorage.getItem('id'), { cart: localCartData });
+  }
   allDeleteBtn.forEach((btn) => {
+    console.log(btn);
     btn.addEventListener('click', (e) => {
       let btn = e.target.closest('.card')?.dataset.id;
-      console.log(btn);
+      modal.style.transform = 'translateY(0%)';
+      overlay.style.display = 'block';
+      //get deleteCart
+      let deleteCart = localCartData.filter((i) => i.id === +btn);
+      //render
+      RenderCartCard(deleteCart, removeProduct);
+      overlay.addEventListener('click', () => {
+        overlay.style.display = 'none';
+        modal.style.transform = 'translateY(100%)';
+      });
+      //handleBTN
+      yesAndNoBtnContainer.addEventListener('click', (e) => {
+        let yesORno = e.target.closest('button')?.id;
+        if (yesORno === 'yes') {
+          handleDelete(btn);
+          overlay.style.display = 'none';
+          modal.style.transform = 'translateY(100%)';
+        } else if (yesORno === 'no') {
+          overlay.style.display = 'none';
+          modal.style.transform = 'translateY(100%)';
+        }
+      });
     });
+  });
+
+  checkoutBtn.addEventListener('click', () => {
+    Router().navigate('/checkout');
   });
 };
