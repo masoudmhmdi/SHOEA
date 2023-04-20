@@ -1,6 +1,7 @@
 import { userExist } from '../../services/apis/userExist';
 import GetHtml from '../../services/instance/GetHtmlPage';
 import { Router } from '../../router';
+import Cookies from 'js-cookie';
 
 export const LoginPage = async () => {
   //get HTML page and assign to document
@@ -15,6 +16,8 @@ export const LoginPage = async () => {
   let lockSvg = document.getElementById('lockPath');
   let showSvgContainer = document.getElementById('showSvgContainer');
   let toastWarning = document.getElementById('toast-warning');
+  let rememberMe = document.querySelector('input[type="checkbox"]');
+  console.log(rememberMe);
   console.log(formBtn);
   //svg toggle
   let svgToggle = {
@@ -103,7 +106,15 @@ export const LoginPage = async () => {
     if (hooAmI.length) {
       if (hooAmI[0].password === passwordVal) {
         console.log(hooAmI);
+        let token = 'JWT-hsudhfusncjsdfu';
         localStorage.setItem('id', hooAmI[0].id);
+        if (rememberMe.checked) {
+          Cookies.set('token', token);
+        } else {
+          Cookies.set('token', token, {
+            expires: 7,
+          });
+        }
         Router().navigate('/home');
       } else {
         showToast();

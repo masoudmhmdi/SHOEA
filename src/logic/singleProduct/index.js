@@ -147,41 +147,74 @@ export const singleProduct = async (match) => {
       ${item}
     </div>`;
         container.innerHTML += html;
-      }
-      let html = `          
-      <div
-      data-active="false"
-      class="min-w-[40px] h-[40px] cursor-pointer size rounded-full border-2 border-gray-500 flex justify-center items-center font-semibold text-lg text-gray-500"
-      >
-      ${item}
-    </div>`;
-      container.innerHTML += html;
-    });
-  }
-  function renderColor(data, container) {
-    container.innerHTML = '';
-    data.forEach((item, i) => {
-      if (i === 0) {
+      } else {
         let html = `          
         <div
-        data-color="${item.split('-')[0]}"
-        class="min-w-[40px] h-[40px] cursor-pointer rounded-full flex justify-center items-center bg-${item} color"
-      >
-      <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-        <g id="SVGRepo_iconCarrier"> <g id="Interface / Check"> <path id="Vector" d="M6 12L10.2426 16.2426L18.727 7.75732" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g> </g>
-      </svg>
+        data-active="false"
+        class="min-w-[40px] h-[40px] cursor-pointer size rounded-full border-2 border-gray-500 flex justify-center items-center font-semibold text-lg text-gray-500"
+        >
+        ${item}
       </div>`;
         container.innerHTML += html;
       }
-      let html = `          
+    });
+  }
+  function renderColor(data, container) {
+    function renderCircle(val, color, id) {
+      if (color === 'green') {
+        let html = `          
       <div
-      data-color="${item.split('-')[0]}"
-      class="min-w-[40px] h-[40px] cursor-pointer rounded-full flex justify-center items-center bg-${item} color"
+      data-color="${id}"
+      class="min-w-[40px] h-[40px] cursor-pointer rounded-full flex justify-center items-center bg-green-500 color"
     >
-    </div>`;
-      container.innerHTML += html;
+    ${val}
+          </div>`;
+        return html;
+      } else if (color === 'red') {
+        let html = `          
+      <div
+      data-color="${id}"
+      class="min-w-[40px] h-[40px] cursor-pointer rounded-full flex justify-center items-center bg-red-500 color"
+    >
+    ${val}
+          </div>`;
+        return html;
+      } else if (color === 'blue') {
+        let html = `          
+      <div
+      data-color="${id}"
+      class="min-w-[40px] h-[40px] cursor-pointer rounded-full flex justify-center items-center bg-blue-500 color"
+    >
+    ${val}
+          </div>`;
+        return html;
+      } else if (color === 'yellow') {
+        let html = `          
+      <div
+      data-color="${id}"
+      class="min-w-[40px] h-[40px] cursor-pointer rounded-full flex justify-center items-center bg-yellow-500 color"
+    >
+    ${val}
+          </div>`;
+        return html;
+      }
+    }
+
+    container.innerHTML = '';
+    data.forEach((item, i) => {
+      console.log(i);
+      if (i === 0) {
+        let x = ` <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <g id="Interface / Check"> <path id="Vector" d="M6 12L10.2426 16.2426L18.727 7.75732" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g> </g>
+          </svg>`;
+        let html = renderCircle(x, item, item.split('-')[0]);
+        container.innerHTML += html;
+      } else {
+        let html = renderCircle('', item, item.split('-')[0]);
+        container.innerHTML += html;
+      }
     });
   }
   function handleQuantity() {
@@ -277,8 +310,14 @@ export const singleProduct = async (match) => {
   });
 
   addToCartBtn.addEventListener('click', () => {
-    patchUser(userId, { cart: [...userData.cart, cartObj] });
-    Router().navigate('/cart');
+    let productExist = [...userData.cart].find((item) => item.id == cartObj.id);
+    console.log(productExist);
+    if (!productExist) {
+      patchUser(userId, { cart: [...userData.cart, cartObj] });
+      Router().navigate('/cart');
+    } else {
+      Router().navigate('/cart');
+    }
   });
   wishlistBtn.addEventListener('click', (e) => {
     let el = e.target.closest('button');

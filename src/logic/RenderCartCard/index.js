@@ -1,4 +1,43 @@
 export const RenderCartCard = (data, container) => {
+  function renderCircle(val, color, id) {
+    if (color === 'green') {
+      let html = `          
+    <div
+    data-color="${id}"
+    class="min-w-[20px] h-[20px] cursor-pointer rounded-full flex justify-center items-center bg-green-500 color"
+  >
+  ${val}
+        </div>`;
+      return html;
+    } else if (color === 'red') {
+      let html = `          
+    <div
+    data-color="${id}"
+    class="min-w-[20px] h-[20px] cursor-pointer rounded-full flex justify-center items-center bg-red-500 color"
+  >
+  ${val}
+        </div>`;
+      return html;
+    } else if (color === 'blue') {
+      let html = `          
+    <div
+    data-color="${id}"
+    class="min-w-[20px] h-[20px] cursor-pointer rounded-full flex justify-center items-center bg-blue-500 color"
+  >
+  ${val}
+        </div>`;
+      return html;
+    } else if (color === 'yellow') {
+      let html = `          
+    <div
+    data-color="${id}"
+    class="min-w-[20px] h-[20px] cursor-pointer rounded-full flex justify-center items-center bg-yellow-500 color"
+  >
+  ${val}
+        </div>`;
+      return html;
+    }
+  }
   container.innerHTML = '';
   data.forEach((cart) => {
     let html = `    <div
@@ -72,7 +111,7 @@ export const RenderCartCard = (data, container) => {
         class="w-full pt-2 flex justify-start items-center gap-1 text-xs opacity-70 font-semibold"
       >
         <div class="flex gap-1 items-center">
-          <div class="w-4 h-4 bg-red-300 rounded-full"></div>
+          ${renderCircle('', cart.color, '')}
           <span>${cart.color}</span>
         </div>
         <span>|</span>

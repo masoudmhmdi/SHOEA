@@ -13,8 +13,10 @@ export const HomePage = async () => {
   let scrollbarCategoryBtn = document.querySelectorAll('.scrollbarBtn');
   let scrollCategoryBtn = document.getElementById('scrollCategoryBtn');
   let cardContainer = document.getElementById('cardContainer');
+  let searchContainer = document.getElementById('search');
   let seeAllBtn = document.getElementById('seeAllBtn');
   let actionBarContainer = document.getElementById('actionBarContainer');
+  let wishlistBtn = document.getElementById('wishlist');
   init();
   //functions
   function renderBtn(element) {
@@ -40,6 +42,7 @@ export const HomePage = async () => {
       Router().navigate(`/brand/${isBtn.name}`);
     }
   });
+
   //Event Listener
   scrollCategoryBtn.addEventListener('click', async (e) => {
     let targetBtn = e.target.closest('button');
@@ -57,5 +60,17 @@ export const HomePage = async () => {
   actionBarContainer.addEventListener('click', (e) => {
     let btnExist = e.target.closest('button');
     btnExist && Router().navigate(`/${btnExist.name}`);
+  });
+
+  searchContainer.addEventListener('click', () => {
+    Router().navigate('/search');
+  });
+
+  seeAllBtn.addEventListener('click', () => {
+    Router().navigate('/seeAll');
+  });
+
+  wishlistBtn.addEventListener('click', () => {
+    Router().navigate('/wishlist');
   });
 };

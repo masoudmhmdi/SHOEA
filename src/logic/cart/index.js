@@ -107,7 +107,7 @@ export const cart = async () => {
   function handleDelete(id) {
     localCartData = localCartData.filter((i) => +i.id !== +id);
     console.log(localCartData);
-    render(localCartData);
+    Router().navigate('cart');
     patchUser(localStorage.getItem('id'), { cart: localCartData });
   }
   allDeleteBtn.forEach((btn) => {
